@@ -1,0 +1,82 @@
+/* (це коментар)
+селектор {
+    властивість: значення;
+}
+
+Селектором може бути:
+* - універсальний селектор, під нього підпадають всі-всі елементи на сторінці
+tag - ім'я тега. Під цей селектор підпадають всі такі теги на сторінці
+#id - ідентифікатор. Під цей селектор  підпадає тільки один елемент - той, в якого такий id
+.class - класс. Під цей селектор підпають всі елементи, об'єднані одним значенням атрибуту class
+
+
+Приорітетність селекторів (вага селекторів)
+* - 0000
+tag - 0001
+.class - 0010
+#id - 0100
+
+inline styles (ті, які вказані безпосередньо у html-розмітці всередині тега style - 1000
+
+
+
+Комбінатори (особливі символи, які позначають зв'язок елементів)
+" " (пробіл) - вказує на нащадків певного тега (general descendent combinator)
+, (кома) - вказує декілька селекторів списком (list combinator)
+> - дочірні елементи (child selector)
+~ - загальний комбінатор сіблінгів (які нижче в потоці за вибраний елемент) (general sibling selector)
++ - комбінатор найближчого сіблінга (next sibling selector)
+
+*/
+
+body {
+    background-color: rgba(105, 105, 105, 0.629);
+}
+
+p {
+    color: green;
+}
+
+h1 {
+    font-family: Ubuntu;
+    font-size: 18px;
+}
+
+
+.italic-text{
+    font-style: italic;
+    color: violet;
+}
+
+
+.gold-text, p, h2 {
+    color: gold;
+}
+
+h2.gold-text {
+
+}
+
+#middle-par {
+    color: rgb(106, 102, 192);
+    background-color: #F9FADF;
+}
+
+
+label[for="mail-input"] {
+    color: brown;
+}
+
+
+article h2 {
+    background-color: blanchedalmond;
+}
+
+
+article > h2 {
+    background-color: rgba(100, 148, 237, 0.695);
+}
+
+p + p {
+    background-color: gainsboro;
+}
