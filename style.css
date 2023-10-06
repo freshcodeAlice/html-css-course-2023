@@ -1,82 +1,50 @@
-/* (це коментар)
-селектор {
-    властивість: значення;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto/Roboto-Medium.ttf') format("truetype");
 }
 
-Селектором може бути:
-* - універсальний селектор, під нього підпадають всі-всі елементи на сторінці
-tag - ім'я тега. Під цей селектор підпадають всі такі теги на сторінці
-#id - ідентифікатор. Під цей селектор  підпадає тільки один елемент - той, в якого такий id
-.class - класс. Під цей селектор підпають всі елементи, об'єднані одним значенням атрибуту class
-
-
-Приорітетність селекторів (вага селекторів)
-* - 0000
-tag - 0001
-.class - 0010
-#id - 0100
-
-inline styles (ті, які вказані безпосередньо у html-розмітці всередині тега style - 1000
-
-
-
-Комбінатори (особливі символи, які позначають зв'язок елементів)
-" " (пробіл) - вказує на нащадків певного тега (general descendent combinator)
-, (кома) - вказує декілька селекторів списком (list combinator)
-> - дочірні елементи (child selector)
-~ - загальний комбінатор сіблінгів (які нижче в потоці за вибраний елемент) (general sibling selector)
-+ - комбінатор найближчого сіблінга (next sibling selector)
-
-*/
-
+/* General styles */
 body {
-    background-color: rgba(105, 105, 105, 0.629);
+    font-family: "Montserrat";
+    font-size: 1em;
 }
 
-p {
-    color: green;
-}
+/* Header styles */
 
-h1 {
-    font-family: Ubuntu;
-    font-size: 18px;
-}
-
-
-.italic-text{
-    font-style: italic;
-    color: violet;
-}
-
-
-.gold-text, p, h2 {
-    color: gold;
-}
-
-h2.gold-text {
+.logo {
 
 }
 
-#middle-par {
-    color: rgb(106, 102, 192);
-    background-color: #F9FADF;
+.menu-list {
+
 }
 
 
-label[for="mail-input"] {
-    color: brown;
+
+
+
+
+
+
+/* First screen */
+
+
+.first-screen {
+    background-image: url('./assets/images/9d87e92590ae5ecb611ebe146e21a634.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
 
 
-article h2 {
-    background-color: blanchedalmond;
+.main-title {
+    font-weight: 800;
+    font-size: 4.06em;
 }
 
+.main-description {
 
-article > h2 {
-    background-color: rgba(100, 148, 237, 0.695);
 }
 
-p + p {
-    background-color: gainsboro;
-}
