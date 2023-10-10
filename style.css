@@ -10,18 +10,39 @@ body {
     font-size: 1em;
 }
 
+
+
+
 /* Header styles */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 2.2em 3.94em;
+    justify-content: space-between;
+}
 
 .logo {
 
 }
 
 .menu-list {
-   
+   display: flex;
+   align-items: center;
+}
+
+.menu-item {
+    margin-left: 3.1em;
 }
 
 
-
+.blue-button {
+    text-transform: uppercase;
+    background-color: #7AE5FD;
+    padding: 1.15em 1.94em;
+    border-radius: 4.8em;
+    margin-left: 1.3em;
+}
 
 
 /* First screen */
@@ -33,6 +54,13 @@ body {
     background-size: cover;
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.first-screen-container {
+    width: 50%;
 }
 
 

@@ -1,0 +1,40 @@
+.parent {
+    height: 600px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+.item {
+     /* width: 80px;
+    height: 80px; */
+    background-color: forestgreen;
+    border: 2px solid blue;
+    color: white;
+    font-size: 25px;
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0 15px;
+}
+
+.third {
+    flex-grow: 5;
+}
+
+.fourth {
+    flex-shrink: 4;
+    margin-left: auto;
+}
+
+.fiveth {
+
+}
