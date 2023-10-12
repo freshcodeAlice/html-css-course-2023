@@ -1,0 +1,101 @@
+.grand-parent {
+    height: 1500px;
+    background-color: darkgray;
+    margin-top: 50px;
+}
+
+
+.parent {
+    position: relative;
+    height: 800px;
+    background-color: rgb(97, 175, 97);
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: green;
+    color: white;
+}
+
+
+/*
+Позиціонування - це принцип розміщення елементів відносно потоку, одне одного або всього документу
+
+ Властивість position
+    - static - не позиціонований елемент (або статично позиціонований)
+
+    - relative - відносне позиціонований - елемент позиціонується відносно свого законного місця в потоці
+
+    - fixed - фіксоване позиціонування - елемент позиціонується відносно viewport. При скроллі залишається на місці
+
+    - absolute - абсолютне позиціонування - елемент позиціонується відносно найближчого не-статичного батьківського елементу. Якщо він такого не знайшов - буде позиціонуватись відносно body
+
+    Рекомендується пара absolute-дитина + relative-батько
+
+    - sticky -  змішаний тип позиціонування:
+        спочатку працює як relative, потім при прокручуванні, якщо залишається вказана відстань (наприклад top:10px, то він має "точку переходу" поведінки, якщо до його верха лишиться 10px від краю екрана. Тоді елемент поводиться як fixed, поки не буде прокручений разом з батьківським елементом
+
+
+Властивості
+top
+left
+right
+bottom
+
+
+z-index
+
+*/
+
+.one {
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+.two {
+
+}
+
+.three {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: cornflowerblue;
+    z-index: -2;
+}
+
+.four {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.five {
+    position: sticky;
+    top: 10px;
+    z-index: 1;
+}
+
+
+.modal-background {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.547);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.modal {
+    width: 20vw;
+    height: 20vh;
+    background-color: white;
+    z-index: 5;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+}

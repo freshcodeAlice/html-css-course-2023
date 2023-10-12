@@ -20,6 +20,11 @@ body {
     align-items: center;
     padding: 2.2em 3.94em;
     justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .logo {
@@ -52,11 +57,13 @@ body {
     background-image: url('./assets/images/9d87e92590ae5ecb611ebe146e21a634.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 15vh;
 }
 
 .first-screen-container {
@@ -74,3 +81,34 @@ body {
 
 }
 
+
+
+/* Three block section */
+
+.block-img {
+    max-width: 40vw;
+}
+
+.description-screen {
+    padding: 5vw;
+}
+
+.description-block {
+    display: flex;
+    flex-direction: row;
+    background-color: #F1FDFF;
+    padding: 2vh 3vw;
+}
+
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: grey;
+    }
+
+    .description-block {
+        flex-direction: column;
+    }
+
+
+} 
